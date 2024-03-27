@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>ETM - ECO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>ETM<br>Economics</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="chem.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chemistry</a> 
+    <a href="eco.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Economics</a> 
+    <a href="english.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">English</a> 
+    <a href="history.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a> 
+  </div>
+</nav>
+
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Economics</span>
+</header>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+        <h1 class="w3-jumbo"><b>Economics</b></h1>
+        <h1 class="w3-xxxlarge w3-text-green"><b>Learning Through Monuments.</b></h1>
+        <hr style="width:50px;border:5px solid green" class="w3-round">
+    </div>
+
+    <br><br>
+
+    <div class="w3-container">
+        <h1 class="w3-xxxlarge"><b>Analysis</b></h1>
+        <hr style="width:50px;border:5px solid green" class="w3-round">
+        <p>Beyond its scenic allure, sunder nursery has evolved into a catalyst for economic growth
+            while preserving cultural heritage and promoting environmental sustainability
+            Sunder nursery was restored by the aga khan trust for culture.
+            One of the key components of Nizamuddin Urban Renewal initiative is environmental
+            development and restoring the historic urban landscapes. To fulfil this purpose, the
+            landscape master plan for environmental development of sunder nursery was prepared by
+            shaheer associates in close consultation with the CPWD- AKTC project team, which received
+            formal ASL, MCD, DUAC and CPWD approval.</p>
+    </div>
+
+    <br><br>
+
+    <div class="w3-container">
+        <h1 class="w3-xxxlarge"><b>Revenue Streams</b></h1>
+        <hr style="width:50px;border:5px solid green" class="w3-round">
+        <p>The revenue streams used in the Sunder Nursery are:</p>
+        <ul>
+            <li>Car Parking: 100/- for 4 hours, Weekdays, 200/- for 4 hours on
+              Sundays and Gazetted holidays.</li>
+            <li>Two-Wheeler Parking: 35/- for 4 hours</li>
+            <li>The government sunder nursery management trust(GSNMT) offers sunder nursery -
+              parks as a venue for various cultural, educational, and ecological public
+              programmes.</li>
+              <li>Memberships</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div class="w3-container">
+      <h1 class="w3-xxxlarge"><b>BST</b></h1>
+      <hr style="width:50px;border:5px solid green" class="w3-round">
+      <ul>
+        <li>Conservation is supported by US ambassadors fund and Housing and Urban
+          Development Corporation (HUDCO).</li>
+          <li>Illumination support is provided by Havells</li>
+          <li>Public partner agency is Archeological Survey of India and private partner agency is
+            Aga Khan Trust for Culture for administrative and financial assistance.</li>
+      </ul>
+  </div>
+</div>
+
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Made by <a href="https://ambiencepublicschool.com" title="W3.CSS" target="_blank" class="w3-hover-opacity">Ambience Public School, Gurugram</a></p></div>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+     
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    </script>
+
+</body>
+</html>

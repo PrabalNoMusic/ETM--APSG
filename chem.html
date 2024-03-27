@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>ETM - CHEM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-purple w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>ETM<br>Chemistry</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="chem.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Chemistry</a> 
+    <a href="eco.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Economics</a> 
+    <a href="english.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">English</a> 
+    <a href="history.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a> 
+  </div>
+</nav>
+
+<header class="w3-container w3-top w3-hide-large w3-purple w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-purple w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Chemistry</span>
+</header>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+        <h1 class="w3-jumbo"><b>Chemistry</b></h1>
+        <h1 class="w3-xxxlarge w3-text-purple"><b>Learning Through Monuments.</b></h1>
+        <hr style="width:50px;border:5px solid purple" class="w3-round">
+    </div>
+
+    <br><br>
+
+    <div class="w3-container">
+        <h1 class="w3-xxxlarge"><b>Restoration</b></h1>
+        <hr style="width:50px;border:5px solid purple" class="w3-round">
+        <p>Three of the nine Mughal-era buildings in Sunder Nursery: the Sundarwala Burj, Sundarwala Mahal, and the Lakkarwala Burj are regarded as being of national importance. As per the UNESCO revision from 2016, these three sites are also included in Humayun's Tomb World Heritage Site, which makes it one of India's densest ensembles of 16th-century tomb gardens.</p>
+        <p>Using traditional methods, techniques, and materials, skilled craftsmen collaborate with architects and engineers to replicate the work of their predecessors in the conservation of historic monuments. This approach strengthens the age-old building abilities.
+            Large-scale conservation efforts have included fixing Sundarwala Mahal's severe structural issues as well as restoring the original, elaborate plaster and ornamental patterns at the Sundarwala and Lakkarwala Burj.</p>
+    </div>
+
+    <br><br>
+
+    <div class="w3-container">
+        <h1 class="w3-xxxlarge"><b>Chemistry</b></h1>
+        <hr style="width:50px;border:5px solid purple" class="w3-round">
+        <ul>
+            <li>Most of the historic monuments built during the Mughal era used standard materials like jaggery, pulses and limestone powder for construction. These materials were easily available and provided a strong structure to the monument, much like bricks and cement. </li><br>
+            <li>Jaggery was used as it was an excellent bonding agent and at the same time allowed for greater usability than cement. It allowed the concrete and other materials to solidify at the right time. </li><br>
+            <li>Pulses like urad dal or split black gram were mixed with limestone to make bricks for the monument. Black gram is hot in potency which gives it a brick-like firmness and makes it very strong. Thus, it was the ideal choice for making the walls of the monuments.</li><br>
+            <li>Lime mortar and other modern materials like limestone and marble dust were used to fill in the damaged parts of the ceiling inscriptions. </li>
+        </ul>
+    </div>
+</div>
+
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Made by <a href="https://ambiencepublicschool.com" title="W3.CSS" target="_blank" class="w3-hover-opacity">Ambience Public School, Gurugram</a></p></div>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+     
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    </script>
+
+</body>
+</html>
